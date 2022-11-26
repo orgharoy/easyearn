@@ -1,0 +1,60 @@
+.profilepage{
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    gap: 2rem;
+}
+
+.profileimgsec{
+    padding: 2rem 1rem;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    /* border: 2px solid grey; */
+}
+
+.profile-pic{
+    height: 15rem;
+    width: 15rem;
+    object-fit: cover;
+}
+
+.profiledesc{
+    padding: 1rem 2rem 2rem 2rem;
+    border-radius: 5px;
+    background: white;
+    
+}
+
+.profileinfo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    margin-right: 3rem;
+}
+
+@media only screen and (max-width: 760px){
+    .profile-pic{
+        height: 10rem;
+        width: 10rem;
+        object-fit: cover;
+    }
+
+    .profilepage{
+        padding: 1rem 0 0 0;
+        display: inline-block;
+    }
+
+}
+

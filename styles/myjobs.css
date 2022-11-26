@@ -1,0 +1,34 @@
+.myjobs{
+    background: white;
+    padding: 2rem 4rem;
+    margin: 2rem 0rem;
+    border-radius: 5px;
+}
+
+.myjob-card{
+    text-decoration: none;
+    color: black;
+}
+
+.created-job{
+    margin-bottom: 0.7rem;
+    padding: 1rem;
+    border: 1px solid rgb(187, 186, 186);
+    align-items: center;
+    gap: 2rem;
+    border-radius: 5px;
+}
+
+.created-job:hover{
+    box-shadow: 0 3px 8px -2px gray;
+}
+
+@media only screen and (max-width: 760px){
+    .myjobs{
+        background: white;
+        padding: 0.3rem;
+        margin: 1rem 0rem 0 0;
+        border-radius: 5px;
+    }
+
+}

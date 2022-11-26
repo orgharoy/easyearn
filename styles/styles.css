@@ -1,0 +1,372 @@
+html{
+    height: -webkit-fill-available;
+}
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 0;
+    margin: 0;
+    background-attachment: fixed;
+    background-color: #e8e9e8;
+}
+
+.container{
+    width: min(100% - 1.5rem, 1180px);
+    margin-inline: auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+.error-message{
+    background-color: rgb(241, 185, 185);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.error{
+    color: red;
+}
+
+.input{
+    /* margin: 0.6rem; */
+    padding: 0 0.7rem;
+    height: 2.5rem;
+    max-width: 100%;
+    border: 2px solid #44b74d;
+    background: #44b74e21;
+    border-radius: 8px;
+    color: rgb(75, 74, 74);
+    font-size: 1rem;
+}
+
+.input:hover{
+    box-shadow: 0 0 6px 0px #44b74d;
+    outline: none;
+}
+
+.input:focus{
+    box-shadow: 0 0 6px 0px #44b74d;
+    outline: none;
+}
+
+.secondary-text{
+    color: grey;
+    font-style: italic;
+}
+
+.inputspan{
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+/* navigation section */
+
+.navigation{
+    background-color: rgb(255, 255, 255);
+    position: sticky;
+    top: 0px;
+    box-shadow: 0px 3px 8px #4b4b4b1f;
+    z-index: 999;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+    align-items: center;
+}
+
+.fa-bars{
+    display: none !important;
+}
+
+.logo{
+    width: 8rem;
+}
+
+.fa-solid{
+    color: #0caa41;
+    font-size: 1.2rem;
+}
+
+.fa-caret-down{
+    margin-left: 1rem;
+}
+
+
+ul{
+    display: flex;
+    align-items: center;
+}
+
+.animate{
+    padding: 0 0.5rem;
+    list-style: none;
+
+    display: inline-block;
+    position: relative;
+    color: #0caa41;
+}
+
+.animate::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -0.3rem;
+    left: 0;
+    background-color: #0caa41;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.animate:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+.navigation a{
+    text-decoration: none;
+    color: #0caa41;
+}
+
+.mobile-notifications{
+    display: none;
+}
+
+.sign-button{
+    margin: 2rem;
+}
+
+.close-button{
+    display: none !important;
+}
+
+.btn-primary{
+    border: none;
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #44b74d;
+    color: white !important;
+    padding: 0.5rem 0.7rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.btn-primary:hover{
+    background-color: #0caa41;
+}
+
+.btn-red{
+    border: none;
+    text-align: center;
+    display: block;
+    background-color: #ff0000;
+    color: white !important;
+    padding: 0.5rem 0.7rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-red:hover{
+    background-color: #ac0202;
+}
+
+.login-button{
+    text-align: center;
+    display: block;
+    outline: 2px solid #44b74d;
+    color: #44b74d !important;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+
+    transition: 70ms ease-in-out;
+}
+
+.login-button:hover{
+    box-shadow: 0 0 5px 2px #44b74d;
+}
+
+.button{
+    background-color: #44b74d;
+    margin: 0.6rem;
+    padding: 0 1rem;
+    height: 2.5rem;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+
+    transition: 150ms ease-in-out;
+}
+
+.button:hover{
+    background-color: green;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    text-align: center;
+    display: block;
+    outline: 2px solid #44b74d;
+    color: #44b74d !important;
+    border-radius: 5px;
+    min-width: 5rem;
+    padding: 0.5rem 0.7rem;
+    cursor: pointer;
+    margin-bottom: 0.2rem;
+  }
+
+.dropdown:hover .dropbtn {
+    box-shadow: 0 0 5px 2px #44b74d;
+}
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .big-screen{
+    display: block;
+}
+.small-screen{
+    display: none;
+}
+
+
+@media only screen and (max-width: 760px){
+    .big-screen{
+        display: none;
+    }
+    .small-screen{
+        display: block;
+    }
+
+    .fa-bars{
+        display: block !important;
+        cursor: pointer;
+    }
+
+    .fa-solid{
+        font-size: 1.5rem;
+    }
+
+    .main-nav{
+        display: fixed;
+    }
+
+    .logo{
+        width: 7rem;
+    }
+
+    .mobile-notifications{
+        display: block;
+    }
+
+    .icon-pc{
+        display: none !important;
+    }
+
+    .main-nav{
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        top: 0;
+        right: 0;
+        background-color: rgb(255, 255, 255);
+        height: 100vh;
+        width: 55%;
+        z-index: 0;
+        text-transform: uppercase;
+
+        transform: translateX(100%);
+        transition: transform 350ms ease-in-out;
+    }
+
+    .open-nav{
+        transform: translateX(0%);
+    }
+
+    .main-nav ul{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .main-nav ul a{
+        padding: 0.7rem 1.7rem 0.7rem 1.7rem;
+        margin: 0.3rem 0;
+        display: block;
+    }
+
+    .close-button{
+        display: grid !important;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 1rem 1.5rem;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    .signup-button{
+        padding: 0;
+        border-radius: 0px;
+    }
+
+    .main-section{
+        margin-top: 1.5rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+        align-items: flex-start
+    }
+
+    .profile{
+        display: none;
+    }
+    .sign-up-banner{
+        display: none;
+    }
+
+    .filter{
+        display: none;
+    }
+}
+

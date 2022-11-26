@@ -1,0 +1,88 @@
+.footer{
+    margin-top: 10rem;
+}
+
+.footer-contents h3{
+    text-decoration: underline;
+}
+.main-footer{
+    background-color: #0caa41;
+    border: 2px solid #0caa41;
+}
+
+.footer-contents{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.link{
+    color: white;
+    text-decoration: none;
+}
+.copyright{
+    background-color: rgb(15, 54, 15);
+    height: 2rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.fa-copyright{
+    margin-right: 0.5rem;
+}
+
+.footer-logo{
+    width: 12rem;
+}
+
+.company-info{
+    color: white;
+    padding: 1rem;
+}
+.useful-links{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1rem 1rem 3rem;
+    color: white;
+}
+
+.useful-links a{
+    color: white;
+    margin: 0 0 1rem 0;
+}
+
+.other-links{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1rem 1rem 3rem;
+    color: white;
+}
+.line{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0;
+}
+
+.other-links .fa-solid{
+    color: white;
+    font-size: 1rem;
+    padding: 0;
+}
+
+@media only screen and (max-width: 760px){
+    .footer{
+        margin-top: 5rem;
+    }
+    
+    .footer-contents{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .company-info{
+        grid-column: span 2;
+    }
+
+}
